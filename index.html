@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Self-Assessment Quiz</title>
+    <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
   </head>
   <body>
-    <h1>Self-Assessment Quiz</h1>
-    <form onsubmit="return calculateScore()">
-      <h2>Question 1: What is your primary motivation in life?</h2>
-      <input type="radio" name="question1" value="a"> Success and achievement<br>
-      <input type="radio" name="question1" value="b"> Happiness and fulfillment<br>
-      <input type="radio" name="question1" value="c"> Service and contribution<br>
-      <input type="radio" name="question1" value="d"> Wealth and status<br>
-      
-      <h2>Question 2: How do you prefer to learn new information?</h2>
-      <input type="radio" name="question2" value="a"> Through hands-on experience<br>
-      <input type="radio" name="question2" value="b"> Through reading and writing<br>
-      <input type="radio" name="question2" value="c"> Through listening and speaking<br>
-      <input type="radio" name="question2" value="d"> Through observation and analysis<br>
-
-      <h2>Question 3: How do you handle conflicts and disagreements?</h2>
-      <input type="radio" name="question3" value="a"> Avoid them at all costs<br>
-      <input type="radio" name="question3" value="b"> Confront them head-on<br>
-      <input type="radio" name="question3" value="c"> Seek compromise and understanding<br>
-      <input type="radio" name="question3" value="d"> Observe and remain neutral<br>
-
-      <h2>Question 4: How do you manage your emotions?</h2>
-      <input type="radio" name="question4" value="a"> Suppress them and put on a brave face<br>
-      <input type="radio" name="question4" value="b"> Express them freely and openly<br>
-      <input type="radio" name="question4" value="c"> Reflect on them and understand them<br>
-      <input type="radio" name="question4" value="d"> Ignore them and focus on logic<br>
-      
-      <h2>Question 5: How do you prioritize your time and tasks?</h2>
-      <input type="radio" name="question5" value="a"> Based on urgency and importance<br>
-      <input type="radio" name="question5" value="b"> Based on personal preference<br>
-      <input type="radio" name="question5" value="c"> Based on others' needs and expectations<br>
-      <input type="radio" name="question5" value="d"> Based on a set schedule and routine<br>
-
-      <input type="submit" value="Submit">
-    </form>
-    <div id="score-popup" class="score-popup">
-        <div class="score-popup-content">
-          <span class="close-popup">&times;</span>
-          <div id="score"></div>
+    <header>
+      <h1>SANTHAN KUMAR REDDY</h1>
+      <h2>FULL STACK DEVELOPER</h2>
+    </header>
+    <section>
+      <img src="pp.jpg" alt="profile picture">
+      <p>I am a highly motivated and experienced professional with a background in 
+        Computer Science. I have a passion for technology and always strive to 
+        stay up-to-date with the latest developments in my field. I have a proven 
+        track record of delivering successful projects and have experience working in 
+        both individual and team settings. I am excited to be a part of a dynamic and 
+        innovative organization and am eager to contribute my skills and knowledge.</p>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3>Gigamon</h3>
+            <p>This project was a Java-based dashboard application for deep observability,it uses Angular
+               as the frontend framework and Java as the backend language. The backend was built 
+               using the Spring framework and exposed a RESTful API for communication with the frontend. 
+               The system used MongoDB as the database and utilized the Spring Data MongoDB library for 
+               easy integration with the Java backend. We implemented security 
+              measures such as JWT authentication to protect the API and ensure data integrity.</p>
+               <div class="technologies-used">
+                  <h4>Technologies Used:</h4>
+                  <ul>
+                    <li>Java 11</li>
+                    <li>Angular 8</li>
+                    <li>Mongo Db</li>
+                  </ul>
+                </div>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project">
+            <h3>Walgreens</h3>
+            <p>This project involved the development of a microservices architecture using 
+              Java and the Spring framework. The system was composed of several loosely 
+              coupled services, each responsible for specific functionality. The services 
+              communicated with each other using RESTful APIs and utilized a message-based 
+              system Apache Kafka for asynchronous communication. We used Spring Boot to easily 
+              stand up the services and Spring Cloud and Config Server to handle service 
+              discovery and configuration 
+              management. Additionally, we implemented security measures such as OAuth2 and 
+              User Authorization to protect the APIs and ensure data integrity. We also used Azure services
+               for easy deployment and scalability.
+              </p>
+            <div class="technologies-used">
+                <h4>Technologies Used:</h4>
+                <ul>
+                  <li>Spring Boot</li>
+                  <li>Kafka</li>
+                  <li>REST</li>
+                  <li>Mongo DB</li>
+                </ul>
+              </div>
+            <a href="#">View Project</a>
+          </div>
+          <div class="project">
+            <h3>Liberty</h3>
+            <p>This project involved the development of a suite of JUnit tests for a Java 
+              application. The tests were written using the JUnit framework and covered 
+              various aspects of the application including functional and non-functional 
+              requirements such as unit testing, integration testing, and performance testing. 
+              We also used libraries such as Mockito and PowerMock for mocking and testing 
+              complex dependencies. Additionally, we implemented test automation using a 
+              Continuous Integration tool such as Jenkins to run the tests on each code commit 
+              and generate test reports.
+              </p>
+            <div class="technologies-used">
+                <h4>Technologies Used:</h4>
+                <ul>
+                  <li>JAVA 8</li>
+                  <li>Junit4</li>
+                  <li>Mockito</li>
+                </ul>
+              </div>
+            <a href="#">View Project</a>
+          </div>
         </div>
-      </div>
-    <script src="score.js"></script>
+      </section>   
+      <section>
+          <h2>Work Experience</h2>
+          <div class="work-container">
+            <div class="work-item">
+              <h3>Senior Developer</h3>
+              <h4>Global Logic</h4>
+              <p>As a Senior Developer, I will be responsible for 
+                leading the design and development of the new features in the application.
+                Esure the application is Bug free. Fix critical Bugs.I will work closely with a team of 
+                developers and other stakeholders to understand 
+                requirements and design solutions that meet the needs of the business
+              </p>
+              <p>June 2022 - Present</p>
+            </div>
+            <div class="work-item">
+                <h3>Full Stack developer</h3>
+                <h4>Cognizant</h4>
+                <p>I will be responsible for designing and developing 
+                  microservices using Java and related technologies.I will work in a fast-paced and 
+                  dynamic environment, collaborating with other developers, architects, and 
+                  stakeholders to deliver high-quality and scalable microservices</p>
+                <p>March 2021 - June 2022</p>
+              </div>
+            <div class="work-item">
+              <h3>Software Engineer</h3>
+              <h4>Tata Consultancy Services</h4>
+              <p>I will be responsible for designing and developing automated test cases 
+                using JUnit and related technologies.Work closely with the QA team and ensure 
+                smooth deployment of the application.Continuously monitor and improve test 
+                coverage and test execution efficiency </p>
+              <p>Oct 2015 - March 2021</p>
+            </div>
+          </div>
+        </section>
+        
   </body>
+  <footer>
+      <h3>Contact Information</h2>
+      <div class="contact-container">
+        <ul>
+          <li>bandarusanthan9@gmail.com</li>
+          <li>+919866721248</li>
+          <li>Banglore, India</li>
+        </ul>     
+      </div>
+    </footer>
+    
 </html>
