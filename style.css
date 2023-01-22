@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #008080;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+/* score popup */
+.score-popup {
+    display: none; /* hidden by default */
+    position: fixed; /* stay in place */
+    z-index: 1; /* sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    overflow: auto; /* enable scroll if needed */
+    background-color: #f1f1f1; /* background color */
+    padding-top: 20px; /* top padding */
+  }
+  
+  .score-popup-content {
+    background-color: #ffffff; /* content background color */
+    margin: auto; /* center the popup horizontally */
+    padding: 20px; /* content padding */
+    border: 1px solid #888; /* content border */
+    width: 80%; /* content width */
+  }
+  /* close button */
+.close-popup {
+    color: #aaa; /* text color */
+    float: right; /* float to the right */
+    font-size: 28px; /* font size */
+    font-weight: bold; /* font weight */
+  }
+  
+  .close-popup:hover,
+  .close-popup:focus {
+    color: red; /* hover color */
+    text-decoration: none; /* remove underline */
+    cursor: pointer; /* change cursor */
+  }
+  

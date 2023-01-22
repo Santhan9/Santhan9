@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Self-Assessment Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Self-Assessment Quiz</h1>
+    <form onsubmit="return calculateScore()">
+      <h2>Question 1: What is your primary motivation in life?</h2>
+      <input type="radio" name="question1" value="a"> Success and achievement<br>
+      <input type="radio" name="question1" value="b"> Happiness and fulfillment<br>
+      <input type="radio" name="question1" value="c"> Service and contribution<br>
+      <input type="radio" name="question1" value="d"> Wealth and status<br>
+      
+      <h2>Question 2: How do you prefer to learn new information?</h2>
+      <input type="radio" name="question2" value="a"> Through hands-on experience<br>
+      <input type="radio" name="question2" value="b"> Through reading and writing<br>
+      <input type="radio" name="question2" value="c"> Through listening and speaking<br>
+      <input type="radio" name="question2" value="d"> Through observation and analysis<br>
+
+      <h2>Question 3: How do you handle conflicts and disagreements?</h2>
+      <input type="radio" name="question3" value="a"> Avoid them at all costs<br>
+      <input type="radio" name="question3" value="b"> Confront them head-on<br>
+      <input type="radio" name="question3" value="c"> Seek compromise and understanding<br>
+      <input type="radio" name="question3" value="d"> Observe and remain neutral<br>
+
+      <h2>Question 4: How do you manage your emotions?</h2>
+      <input type="radio" name="question4" value="a"> Suppress them and put on a brave face<br>
+      <input type="radio" name="question4" value="b"> Express them freely and openly<br>
+      <input type="radio" name="question4" value="c"> Reflect on them and understand them<br>
+      <input type="radio" name="question4" value="d"> Ignore them and focus on logic<br>
+      
+      <h2>Question 5: How do you prioritize your time and tasks?</h2>
+      <input type="radio" name="question5" value="a"> Based on urgency and importance<br>
+      <input type="radio" name="question5" value="b"> Based on personal preference<br>
+      <input type="radio" name="question5" value="c"> Based on others' needs and expectations<br>
+      <input type="radio" name="question5" value="d"> Based on a set schedule and routine<br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <div id="score-popup" class="score-popup">
+        <div class="score-popup-content">
+          <span class="close-popup">&times;</span>
+          <div id="score"></div>
+        </div>
+      </div>
+    <script src="score.js"></script>
+  </body>
+</html>
